@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Plus+Jakarta+Sans:wght@500;700;800&family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+  background: linear-gradient(#ffffff, #f0f1ff);
+}
+.container {
+  margin: 16px;
+}
+
+header {
+  width: 100%;
+}
+
+.first {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.dark-logo {
+  max-width: 89px;
+  max-height: 25px;
+  margin-top: 10px;
+}
+
+.start-button-1,
+.start-button-2,
+.start-button-3 {
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border: none;
+}
+
+.start-button-1 {
+  background-color: #13183f;
+  width: 140px;
+  height: 48px;
+  border-radius: 28px;
+}
+
+.h1-p {
+  margin-top: 30px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 40px;
+  color: #13183f;
+  line-height: 50px;
+  margin-bottom: 26px;
+}
+
+h2 {
+  font-weight: 800;
+  font-size: 20px;
+  color: #13183f;
+  margin-bottom: 15px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #83869a;
+}
+
+a {
+  color: #f74780;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.start-button-2 {
+  margin-top: 25px;
+  border-radius: 31px;
+  width: 167px;
+  height: 56px;
+  background: linear-gradient(#ff6f48, #f02aa6);
+}
+
+.image-hero-mobile {
+  width: 100%;
+}
+
+.middle {
+  color: white;
+  background: linear-gradient(#ff6f48, #f02aa6);
+  border: none;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 20px;
+  line-height: 35px;
+}
+
+.card {
+  border-radius: 10px;
+  margin-top: 40px;
+  background-color: white;
+  padding: 30px;
+  padding-top: 50px;
+  position: relative;
+}
+
+.card p {
+  margin-bottom: 25px;
+}
+
+.little-logoes {
+  position: absolute;
+  top: -28px;
+}
+
+.end {
+  background-color: #13183f;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px;
+  margin-top: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.start-button-3 {
+  background: linear-gradient(#4851ff, #f02aa6);
+  border-radius: 28px;
+  width: 140px;
+  height: 48px;
+}
+
+.start-button-1,
+.start-button-2,
+.start-button-3,
+a {
+  cursor: pointer;
+}
+.start-button-1:hover {
+  background-color: #666ca3;
+}
+.start-button-2:hover {
+  opacity: 50%;
+}
+.start-button-3:hover {
+  background: linear-gradient(#9095f3, #e866b8);
+}
+a:hover {
+  color: #ffa7c3;
+}
+
+@media screen and (min-width: 720px) {
+  .main {
+    margin-top: 250px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-around;
+    grid-column-gap: 50px;
+  }
+
+  .card {
+    margin-bottom: 15px;
+  }
+
+  .middle {
+    padding-top: 60px;
+    margin-top: 41px;
+    max-height: 236px;
+  }
+
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .image-hero-mobile {
+    display: none;
+  }
+  .h1-p {
+    max-width: 50%;
+    padding-top: 50px;
+  }
+  body {
+    background-image: url("./image-hero-tablet.png"),
+      linear-gradient(#ffffff, #f0f1ff);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -50px right -250px, left bottom;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 56px;
+  }
+  /* body {
+    background-size: 800px 800px;
+    background-position: top -120px right -300px;
+  } */
+
+  .main {
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .container {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+}
