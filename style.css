@@ -185,7 +185,7 @@ a:hover {
     padding-top: 50px;
   }
   body {
-    background-image: url("./image-hero-tablet.png"),
+    background-image: url("images/./image-hero-tablet.png"),
       linear-gradient(#ffffff, #f0f1ff);
     background-repeat: no-repeat, no-repeat;
     background-position: top -50px right -250px, left bottom;
